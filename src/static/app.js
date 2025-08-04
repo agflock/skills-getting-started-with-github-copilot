@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let participantsHTML = "<ul style='margin-top:8px; margin-bottom:0; padding-left:20px;'>";
         if (details.participants.length > 0) {
           details.participants.forEach(email => {
-            participantsHTML += `<li style='color:#3949ab; font-size:15px;'>${email}</li>`;
+            participantsHTML += `<li class='activity-participant'>${email}</li>`;
           });
         } else {
           participantsHTML += `<li style='color:#888; font-style:italic;'>No participants yet</li>`;
